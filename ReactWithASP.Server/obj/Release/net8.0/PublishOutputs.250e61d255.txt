@@ -1,0 +1,12 @@
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\ReactWithASP.Server.exe
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\ReactWithASP.Server.dll
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\ReactWithASP.Server.deps.json
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\ReactWithASP.Server.runtimeconfig.json
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\ReactWithASP.Server.pdb
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SpaProxy.dll
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\src\ReactWithASP\ReactWithASP.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
