@@ -15,8 +15,8 @@ reactwithasp.client/*.local
 
 # Editor directories and files
 reactwithasp.client/.vscode/*
-reactwithasp.client/!.vscode/extensions.json
-reactwithasp.client/.idea
+!reactwithasp.client/.vscode/extensions.json
+reactwithasp.client/.idea/
 reactwithasp.client/.DS_Store
 reactwithasp.client/*.suo
 reactwithasp.client/*.ntvs*
@@ -24,7 +24,11 @@ reactwithasp.client/*.njsproj
 reactwithasp.client/*.sln
 reactwithasp.client/*.sw?
 
-reactwithasp.client/obj
-ReactWithASP.Server/bin
-ReactWithASP.Server/obj
+**/obj/
+**/bin/
+**/Debug/
 /ReactWithASP.slnLaunch.user
+**/*.user
+*.suo
+*.userosscache
+*.sln.docstates

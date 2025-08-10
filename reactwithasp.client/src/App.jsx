@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import BurgerMenu from './BurgerMenu';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -32,11 +34,17 @@ function App() {
         </table>;
 
     return (
-        <div>
-            <h1 id="tableLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
+        <BrowserRouter>
+            <BurgerMenu />
+            <div id="contents">
+                <h1 id="tableLabel">Weather forecast</h1>
+                <p>This component demonstrates fetching data from the server.</p>
+                {contents}
+            </div>
+        </BrowserRouter>
+            
+            
+        
     );
     
     async function populateWeatherData() {
