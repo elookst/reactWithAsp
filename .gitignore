@@ -1,1 +1,30 @@
 .vs/
+# Logs
+reactwithasp.client/logs
+reactwithasp.client/*.log
+reactwithasp.client/npm-debug.log*
+reactwithasp.client/yarn-debug.log*
+reactwithasp.client/yarn-error.log*
+reactwithasp.client/pnpm-debug.log*
+reactwithasp.client/lerna-debug.log*
+
+reactwithasp.client/node_modules
+reactwithasp.client/dist
+reactwithasp.client/dist-ssr
+reactwithasp.client/*.local
+
+# Editor directories and files
+reactwithasp.client/.vscode/*
+reactwithasp.client/!.vscode/extensions.json
+reactwithasp.client/.idea
+reactwithasp.client/.DS_Store
+reactwithasp.client/*.suo
+reactwithasp.client/*.ntvs*
+reactwithasp.client/*.njsproj
+reactwithasp.client/*.sln
+reactwithasp.client/*.sw?
+
+reactwithasp.client/obj
+ReactWithASP.Server/bin
+ReactWithASP.Server/obj
+/ReactWithASP.slnLaunch.user
