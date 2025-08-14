@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import About from './pages/About';
 
 function App() {
     const [forecasts, setForecasts] = useState();
@@ -35,7 +36,18 @@ function App() {
 
     return (
         <BrowserRouter>
+            <Routes>
+                <Route path="/about" element={<About/> }/>
+            </Routes>
+            <div id="top-menu">
+                <a id="home" href="/">Home</a>
+                <a id="about" href="/about">About</a>
+                <a id="menu" href="/menu">Menu</a>
+                <a id="contact" href="/contact">Contact</a>
+
+            </div>
             <BurgerMenu />
+            
             <div id="contents">
                 <h1 id="tableLabel">Weather forecast</h1>
                 <p>This component demonstrates fetching data from the server.</p>
