@@ -1,71 +1,33 @@
-import { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import About from './pages/About';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Menu from './pages/Menu';
 
 function App() {
-    const [forecasts, setForecasts] = useState();
-
-    useEffect(() => {
-        populateWeatherData();
-    }, []);
-
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-        : <table className="table table-striped" aria-labelledby="tableLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
 
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/about" element={<About/> }/>
-            </Routes>
             <div id="top-menu">
                 <a id="home" href="/">Home</a>
                 <a id="about" href="/about">About</a>
                 <a id="menu" href="/menu">Menu</a>
                 <a id="contact" href="/contact">Contact</a>
-
             </div>
             <BurgerMenu />
-            
-            <div id="contents">
-                <h1 id="tableLabel">Weather forecast</h1>
-                <p>This component demonstrates fetching data from the server.</p>
-                {contents}
-            </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/menu" element={<Menu /> }/>
+                <Route path="/contact" element={<Contact /> } />
+            </Routes>
         </BrowserRouter>
             
             
         
     );
-    
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        if (response.ok) {
-            const data = await response.json();
-            setForecasts(data);
-        }
-    }
 }
 
 export default App;
